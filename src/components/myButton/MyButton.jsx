@@ -8,9 +8,12 @@
 // * мы забираем значения из объекта по ключам и кладем в переменные с соответствующим именем в одну строчку
 
 import './myButton.css'
-function MyButton({func, isDanger, text}) {
-  console.log(isDanger)
-  return <button onClick={func} className={`my-button ${isDanger ? 'btn-danger': ''}`}>{text}</button>
+
+const handleDefaultClick = () => {
+  console.log("default click!");
+};
+function MyButton({func=handleDefaultClick, isDanger=true, text='Click'}) {
+  return <button onClick={func} className={`my-button ${isDanger ? 'btn-danger': 'btn-primary'}`}>{text}</button>
 }
 
 export default MyButton;
