@@ -1,19 +1,16 @@
 import MyButton from "../../components/myButton/MyButton";
 
-
 function Lesson03() {
-
   // эти функции мы передаем в props компоненту MyButton
   const handleClick = () => {
-    console.log('click!')
-  }
+    console.log("click!");
+  };
   const handleSubmit = () => {
-    console.log('submit!')
-  }
+    console.log("submit!");
+  };
   const handleReset = () => {
-    console.log('reset!')
-  }
-
+    console.log("reset!");
+  };
 
   return (
     <div className="lesson-container">
@@ -23,11 +20,13 @@ function Lesson03() {
       <p>Мы хотим научиться передавать в компонент разные данные:</p>
       {/* имя для ключей props (text, func) мы придумываем самостоятельно */}
       {/* важно использовать эти же имена ключей в самом компоненте, когда вы встречаете данные */}
-      <MyButton text={'Click'} func={handleClick}/>
-      <MyButton text={'Submit'} func={handleSubmit}/>
-      <MyButton text={'Reset'} func={handleReset}/>
+      <div>
+        <MyButton text={"Click"} func={handleClick} isDanger={true} />
+        <MyButton text={"Submit"} func={handleSubmit} isDanger={false} />
+        <MyButton text={"Reset"} func={handleReset} isDanger={true} />
+      </div>
     </div>
-  )
+  );
 }
 
 export default Lesson03;
