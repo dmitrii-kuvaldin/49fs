@@ -7,13 +7,17 @@
 // * c деструктуризацией
 // * мы забираем значения из объекта по ключам и кладем в переменные с соответствующим именем в одну строчку
 
-import './myButton.css'
+import "./myButton.css";
 
 const handleDefaultClick = () => {
   console.log("default click!");
 };
-function MyButton({func=handleDefaultClick, isDanger=true, text='Click'}) {
-  return <button onClick={func} className={`my-button ${isDanger ? 'btn-danger': 'btn-primary'}`}>{text}</button>
+function MyButton({ func = handleDefaultClick, isDanger = true, text = "Click", myType='button' }) {
+  return (
+    <button type={myType} onClick={func} className={`my-button ${isDanger ? "btn-danger" : "btn-primary"}`}>
+      {text}
+    </button>
+  );
 }
 
 export default MyButton;
