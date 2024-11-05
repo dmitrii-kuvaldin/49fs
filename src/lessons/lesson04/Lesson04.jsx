@@ -91,8 +91,8 @@ function Lesson04() {
         массиве из useState() - она перезаписывает состояние. Изменение состояния вызывает ререндр с
         новыми данными
       </p>
-      <h3>UseState practice:</h3>
       <div className="state-practice">
+      <h4>UseState practice:</h4>
         <p>Изменение строки:</p>
         <div>
           <span>{name}</span>
