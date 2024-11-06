@@ -81,7 +81,7 @@ function Lesson04() {
     <div className="lesson-container">
       <h2>Lesson 04</h2>
       <p>React hook useState()🪝</p>
-      <img height={100} src="/logo192.png" alt="" />
+      {/* <img height={100} src="/logo192.png" alt="" /> */}
       <div className="counter">
         <MyButton func={handleMinus} text={"-"} />
         {/* <button onClick={handleMinus}>-</button> */}

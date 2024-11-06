@@ -1,17 +1,19 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
+import Homework04 from "./homeworks/homework04/Homework04";
+import Lesson01 from "./lessons/lesson01/Lesson01";
 // import Lesson03 from "./lessons/lesson03/Lesson03";
 
-import Lesson04 from "./lessons/lesson04/Lesson04";
 
 
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <>
-    {/* <Lesson01/> */}
+    <Lesson01/>
     {/* <Lesson03/> */}
-    <Lesson04/>
+    {/* <Lesson04/> */}
+    <Homework04/>
   </>
 );
